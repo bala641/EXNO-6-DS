@@ -95,19 +95,19 @@ plt.title('Total Bill by Day and Gender')
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-mohan = pd.read_csv('/content/titanic_dataset (2).csv')
-mohan
+bala = pd.read_csv('/content/titanic_dataset (2).csv')
+bala
 ~~~
 ![image](https://github.com/user-attachments/assets/8ddd0d20-e3fc-48ee-bee5-fb72268d5155)
 ~~~python
 plt.figure(figsize=(8,5))
-sns.barplot(x='Embarked', y='Fare', data=mohan, palette='rainbow')
+sns.barplot(x='Embarked', y='Fare', data=bala, palette='rainbow')
 plt.title("Fare of Passenger by Embarked Town")
 ~~~
 ![image](https://github.com/user-attachments/assets/3027b309-6771-4e0f-938d-52bcbe59a1af)
 ~~~python
 plt.figure(figsize=(8,5))
-sns.barplot(x='Embarked', y='Fare', data=mohan, palette='rainbow', hue='Pclass')
+sns.barplot(x='Embarked', y='Fare', data=bala, palette='rainbow', hue='Pclass')
 plt.title("Fare of Passenger by Embarked Town, Divided by Class")
 ~~~
 ![image](https://github.com/user-attachments/assets/7d6b1e28-c532-44fe-a3ab-af703b3f6989)
